@@ -1,0 +1,26 @@
+<div class="container-buttons">
+<button class="button-primary" (click)="downloadUsers()">
+Descargar Excel
+</button>
+</div>
+
+<table class="user-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Telefono</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let user of users">
+        <td>{{user.id.name}}</td>
+        <td>{{user.name.first}} {{user.name.last}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+    </tr>
+
+    </tbody>
+</table>
